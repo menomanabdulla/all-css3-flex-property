@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MFED Day-6</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <main>
+            <div class="o-title--block o-flex o-flex__justify-content--center">
+                <h2>All CSS3 flex property with example</h2>
+            </div> <!-- end block -->
+
+            <div class="o-block">
+                <h3>Without Flex</h3>
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                </ul>
+            </div> <!-- end block -->
+            <div class="o-block">
+                <h3>Display Flex</h3>
+                <code>
+                    display: flex;
+                </code>
+                <ul class="o-flex">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                </ul>
+            </div> <!-- end block -->
+            <div class="o-block">
+                <h3>Flex Order</h3>
+                <code>
+                    order: 1;
+                </code>
+                <code>
+                    order: 2;
+                </code>
+                <code>
+                    order: 3;
+                </code>
+                <ul class="o-flex">
+                    <li class="o-flex__item--order-1">1</li>
+                    <li class="o-flex__item--order-3">2</li>
+                    <li class="o-flex__item--order-2">3</li>
+                    <li>4</li>
+                </ul>
+            </div> <!-- end block -->
+            <div class="o-block">
+                <h3>Flex Direction</h3>
+                <code>
+                    flex-direction: row;
+                </code>
+                <ul class="o-flex o-flex__direction--row">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                </ul>
+                <code>
+                    flex-direction: row-reverse;
+                </code>
+                <ul class="o-flex o-flex__direction--row-reverse">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                </ul>
+                <code>
+                    flex-direction: column;
+                </code>
+                <ul class="o-flex o-flex__direction-column">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                </ul>
+                <code>
+                    flex-direction: column-reverse;
+                </code>
+                <ul class="o-flex o-flex__direction--column-reverse">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                </ul>
+            </div> <!-- end block -->
+            <div class="o-block">
+                <h3>Flex Wrap</h3>
+                <code>
+                    flex-wrap: nowrap;
+                </code>
+                <ul class="o-flex o-flex__wrap--nowrap">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                </ul>
+                <code>
+                    flex-wrap: wrap;
+                </code>
+                <ul class="o-flex o-flex__wrap--wrap max-w-350">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                </ul>
+                <code>
+                    flex-wrap: wrap-reverse;
+                </code>
+                <ul class="o-flex o-flex__wrap--wrap-reverse max-w-350">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                </ul>
+            </div> <!-- end block -->
+            <div class="o-block">
+                <h3>Flex Grow</h3>
+                <code>
+                    flex-grow: 2;
+                </code>
+                <code>
+                    flex-grow: 3;
+                </code>
+                <code>
+                    flex-grow: 4;
+                </code>
+                <ul class="o-flex">
+                    <li>1</li>
+                    <li class="o-flex__item--grow-2">2</li>
+                    <li>3</li>
+                    <li class="o-flex__item--grow-3">4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li class="o-flex__item--grow-4">7</li>
+                </ul>
+            </div> <!-- end block -->
+            <div class="o-block">
+                <h3>Flex Shrink</h3>
+                <code>
+                    flex-shrink: 2;
+                </code>
+                <code>
+                    flex-shrink: 3;
+                </code>
+                <code>
+                    flex-shrink: 4;
+                </code>
+                <ul class="o-flex max-w-520">
+                    <li>1</li>
+                    <li class="o-flex__item--shrink-2">2</li>
+                    <li>3</li>
+                    <li class="o-flex__item--shrink-3">4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li class="o-flex__item--shrink-4">7</li>
+                </ul>
+            </div> <!-- end block -->
+            <div class="o-block">
+                <h3>Flex Flow</h3>
+                <code>
+                    flex-flow: row-reverse wrap-reverse;
+                </code>
+                <ul class="o-flex o-flex__flow max-w-350">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                </ul>
+            </div> <!-- end block -->
+            <div class="o-block">
+                <h3>Flex Basis</h3>
+                <code>
+                    flex-basis: 40px;
+                </code>
+                <code>
+                    flex-basis: 200px;
+                </code>
+                <code>
+                    flex-basis: 120px;
+                </code>
+                <ul class="o-flex">
+                    <li>1</li>
+                    <li>2</li>
+                    <li class="o-flex__item--basis-40">3</li>
+                    <li>4</li>
+                    <li class="o-flex__item--basis-200">5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li class="o-flex__item--basis-120">8</li>
+                    <li>9</li>
+                </ul>
+            </div> <!-- end block -->
+            <div class="o-block">
+                <h3>Justify Content</h3>
+                <code>
+                    justify-content: start;
+                </code>
+                <ul class="o-flex o-flex__justify-content--start">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                </ul>
+                <code>
+                    justify-content: flex-end;
+                </code>
+                <ul class="o-flex o-flex__justify-content--flex-end">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                </ul>
+                <code>
+                    justify-content: center;
+                </code>
+                <ul class="o-flex o-flex__justify-content--center">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                </ul>
+                <code>
+                    justify-content: space-between;
+                </code>
+                <ul class="o-flex o-flex__justify-content--space-between">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                </ul>
+                <code>
+                    justify-content: space-around;
+                </code>
+                <ul class="o-flex o-flex__justify-content--space-around">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                </ul>
+                <code>
+                    justify-content: space-evenly;
+                </code>
+                <ul class="o-flex o-flex__justify-content--space-evenly">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                </ul>
+            </div> <!-- end block -->
+            <div class="o-block">
+                <h3>Align Items</h3>
+                <code>
+                    align-items: flex-start;
+                </code>
+                <ul class="o-flex o-flex__align-items--start min-h-150 gray--bg">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                </ul>
+                <code>
+                    align-items: flex-end;
+                </code>
+                <ul class="o-flex o-flex__align-items--end min-h-150 gray--bg">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                </ul>
+                <code>
+                    align-items: center;
+                </code>
+                <ul class="o-flex o-flex__align-items--center min-h-150 gray--bg">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                </ul>
+            </div> <!-- end block -->
+            <div class="o-block">
+                <h3>Align Self</h3>
+                <code>
+                    align-self: flex-start;
+                </code>
+                <code>
+                    align-self: flex-end;
+                </code>
+                <ul class="o-flex o-flex__align-items--center o-flex__justify-content--center min-h-150 gray--bg">
+                    <li class="o-flex__item--align-self--end">0</li>
+                    <li>1</li>
+                    <li class="o-flex__item--align-self--start">2</li>
+                    <li>3</li>
+                    <li class="o-flex__item--align-self--end">4</li>
+                    <li>5</li>
+                    <li class="o-flex__item--align-self--start">6</li>
+                    <li>7</li>
+                    <li class="o-flex__item--align-self--end">8</li>
+                </ul>
+                <ul class="o-flex o-flex__align-items--center o-flex__justify-content--center min-h-150 gray--bg">
+                    <li class="o-flex__item--align-self--start">0</li>
+                    <li>1</li>
+                    <li class="o-flex__item--align-self--end">2</li>
+                    <li>3</li>
+                    <li class="o-flex__item--align-self--start">4</li>
+                    <li>5</li>
+                    <li class="o-flex__item--align-self--end">6</li>
+                    <li>7</li>
+                    <li class="o-flex__item--align-self--start">8</li>
+                </ul>
+            </div> <!-- end block -->
+            <div class="o-block">
+                <h3>Align Content</h3>
+                <code>
+                    align-content: space-between;
+                </code>
+                <ul class="o-flex o-flex__align-content--space-between o-flex__wrap--wrap min-h-290 gray--bg">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li>13</li>
+                    <li>14</li>
+                    <li>15</li>
+                </ul>
+                <code>
+                    align-content: center;
+                </code>
+                <ul class="o-flex o-flex__align-content--center o-flex__wrap--wrap min-h-290 gray--bg">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li>13</li>
+                    <li>14</li>
+                    <li>15</li>
+                </ul>
+            </div> <!-- end block -->
+        </main>
+    </body>
+</html>
